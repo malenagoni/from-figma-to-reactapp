@@ -1,0 +1,99 @@
+.CardsContainer {
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin-top: 29px;
+    margin-bottom: 20px;
+    background-color: transparent;
+
+}
+.CardsContainer-Cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.CardsContainer-Titles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.CardsContainer-Titles-Proyectos {
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 10.25px;
+    padding-right: 9px;
+}
+.CardsContainer-Titles-FilterTitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: #999999;
+}
+.CardsContainer-Header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 31px;
+}
+.CardsContainer-Buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.CardsContainer-Buttons-Filter {
+    display: flex;
+    align-items: center;
+    background-color: #999999;
+    border:none;
+    border-radius: 5px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+.CardsContainer-Buttons-Filter:hover {
+    background-color: #4ABFCE;
+}
+.CardsContainer-Buttons-Grid {
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #4ABFCE;
+    border:none;
+    width: 36px;
+    height: 36px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.CardsContainer-Buttons-List {
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #999999;
+    border:none;
+    width: 36px;
+    height: 36px;
+    margin-left: 1px;
+    cursor: pointer;
+}
+.CardsContainer-Footer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 100px;
+}
+.CardsContainer-ChatBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4ABFCE;
+    border-radius: 10px;
+    border: none;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}

@@ -1,0 +1,116 @@
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    height: 100px;
+    width: 100%;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Navbar-Left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 100px;
+}
+.Navbar-Right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right: 100px;
+    height: 100%;
+    padding-top: 22px;
+}
+
+.Navbar-SubLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+.Navbar-Btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #4ABFCE;
+    width: 190px;
+    height: 36px;
+    border-radius: 5px;
+    border: transparent;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.Navbar-Create {
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-left: 9px;
+}
+
+.Navbar-Quierocasa {
+    display: flex;
+    align-items: flex-start;
+    font-size: 24px;
+    color: black;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.Navbar-Items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Navbar-Items * {
+    margin-right: 12px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.Navbar-DataFont {
+    font-weight: 400 !important;
+    font-size: 14px;
+    font-style: normal !important;
+}
+
+.Navbar-Amount-Select {
+    background-color: transparent;
+    border: none;
+}
+
+.Navbar-Search {
+    display: flex;
+    position: relative;
+
+}
+
+.Navbar-Input {
+    width: 280px;
+    height: 31px;
+    padding-left: 15px !important;
+    border-radius: 5px;
+    border: 1px solid #333333;
+    cursor: pointer;
+}
+
+.Navbar-BtnSearch {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    height: 35px;
+    background-color: transparent;
+    border: none;
+    right: 3px;
+    cursor: pointer;
+}
