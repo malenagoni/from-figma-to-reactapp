@@ -43,7 +43,7 @@ export const Card = ({ state, date, people, name, wishlist, address, price, size
                             </div>
                             <div className="Card-Description-Data">
                                 <img src={user2} alt={user2} width="20px" height="20px" className="Card-Description-Data-Img" />
-                                <div style={{ fontSize: "14px", fontWeight: "200", fontStyle: "normal", paddingRight: "5px" }}>{people}</div>
+                                <div style={{ fontSize: "14px", fontWeight: "200", fontStyle: "normal", paddingLeft: "5px" }}>{people}</div>
                             </div>
                         </div>
                     </div>
