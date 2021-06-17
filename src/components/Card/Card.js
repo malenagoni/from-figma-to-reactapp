@@ -10,20 +10,16 @@ import Datecalendar from "../../icons/Datecalendar.png";
 import star from "../../icons/wishlist.png";
 import fullstar from "../../icons/fullstar.png";
 
-
 export const Card = ({ state, date, people, name, wishlist, address, price, size, progress, ppc, pcr, image }) => {
-
-    const [isWishlist, setWishlist] = useState(wishlist)
+    const [isWishlist, setWishlist] = useState(wishlist);
 
     function onclick() {
-        isWishlist?setWishlist(false):setWishlist(true)
+        isWishlist ? setWishlist(false) : setWishlist(true);
     }
 
     return (
         <div className="Card">
             <div className="Card-Image">
-                {" "}
-                {/*imagen */}
                 <img src={image} alt={name} width="366px" height="235px" className="Card-Image-Img" />
                 <div className="Card-Image-Data">
                     <div className="Card-Image-Data-Header">
@@ -33,10 +29,11 @@ export const Card = ({ state, date, people, name, wishlist, address, price, size
                             {state === "Detenido" && <div className="Card-State-Detenido">{state}</div>}
                             {state === "Finalizado" && <div className="Card-State-Finalizado">{state}</div>}
                             <button className="Card-Star">
-                                {isWishlist? <img src={fullstar} alt={fullstar} width="27px" height="26px" style={{ cursor: "pointer" }} onClick={(e) => onclick(e)}/>:
-                                <img src={star} alt={star} width="24px" height="21px" style={{ cursor: "pointer" }} onClick={() => onclick()}/>
-                                }
-                                
+                                {isWishlist ? (
+                                    <img src={fullstar} alt={fullstar} width="27px" height="26px" style={{ cursor: "pointer" }} onClick={(e) => onclick(e)} />
+                                ) : (
+                                    <img src={star} alt={star} width="24px" height="21px" style={{ cursor: "pointer" }} onClick={() => onclick()} />
+                                )}
                             </button>
                         </div>
                         <div className="Card-Image-Data-Header-B">
@@ -46,13 +43,13 @@ export const Card = ({ state, date, people, name, wishlist, address, price, size
                             </div>
                             <div className="Card-Description-Data">
                                 <img src={user2} alt={user2} width="20px" height="20px" className="Card-Description-Data-Img" />
-                                <div style={{ fontSize: "14px", fontWeight: "200", fontStyle: "normal" }}>{people}</div>
+                                <div style={{ fontSize: "14px", fontWeight: "200", fontStyle: "normal", paddingRight: "5px" }}>{people}</div>
                             </div>
                         </div>
                     </div>
                     <div className="Card-Image-Data-Footer">
                         <div className="Card-Image-Data-Footer-Name">{name}</div>
-                        <div className='Card-Image-Data-Footer-Address'>{address}</div>
+                        <div className="Card-Image-Data-Footer-Address">{address}</div>
                     </div>
                 </div>
             </div>

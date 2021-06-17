@@ -43,7 +43,7 @@ export const Navbar = () => {
             {/* RIGHT*/}
             <div className="Navbar-Right">
                 <div className="Navbar-Search">
-                    <input type="text" placeholder="Buscar" className='Navbar-Input'/>
+                    <input type="text" placeholder="Buscar" className="Navbar-Input" />
                     <button className="Navbar-BtnSearch">
                         <img src={search} alt="search" width="24px" height="24px" />
                     </button>

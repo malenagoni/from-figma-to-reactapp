@@ -1,17 +1,18 @@
 .CardsContainer {
-    display:flex;
+    display: flex;
+    position: relative;
     flex-direction: column;
     height: 100%;
     width: 100%;
     margin-top: 29px;
     margin-bottom: 20px;
     background-color: transparent;
-
+    z-index: 1;
 }
 .CardsContainer-Cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    margin-left: 100px;
 }
 .CardsContainer-Titles {
     display: flex;
@@ -47,26 +48,25 @@
     display: flex;
     align-items: center;
     background-color: #999999;
-    border:none;
+    border: none;
     border-radius: 5px;
     width: 36px;
     height: 36px;
     cursor: pointer;
 }
 .CardsContainer-Buttons-Filter:hover {
-    background-color: #4ABFCE;
+    background-color: #4abfce;
 }
 .CardsContainer-Buttons-Grid {
     display: flex;
     align-items: center;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    background-color: #4ABFCE;
-    border:none;
+    background-color: #4abfce;
+    border: none;
     width: 36px;
     height: 36px;
     margin-left: 20px;
-    cursor: pointer;
 }
 .CardsContainer-Buttons-List {
     display: flex;
@@ -74,13 +74,12 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     background-color: #999999;
-    border:none;
+    border: none;
     width: 36px;
     height: 36px;
     margin-left: 1px;
-    cursor: pointer;
 }
-.CardsContainer-Footer{
+.CardsContainer-Footer {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -90,10 +89,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #4ABFCE;
+    background-color: #4abfce;
     border-radius: 10px;
     border: none;
     width: 60px;
     height: 60px;
-    cursor: pointer;
 }
